@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Добавить пользователя Twitch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Добавить пользователя Twitch</h1>
+      <form id="userForm">
+        <label for="nickname">Ник на Twitch:</label>
+        <input
+          type="text"
+          id="nickname"
+          placeholder="Введите ник на Twitch"
+          required
+        />
+        <label for="realname">Реальное имя:</label>
+        <input
+          type="text"
+          id="realname"
+          placeholder="Введите реальное имя"
+          required
+        />
+        <button type="button" id="addUserBtn">Добавить</button>
+      </form>
+      <div id="confirmationButtons" style="display: none">
+        <button type="button" id="confirmBtn">Все верно</button>
+        <button type="button" id="editBtn">Изменить</button>
+      </div>
+      <a href="list.html">Перейти к списку пользователей</a>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

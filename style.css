@@ -1,0 +1,177 @@
+/* Основные стили для контейнера и фона */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #2e2e2e, #4b4b4b);
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #444;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* Стиль для кнопок */
+button {
+  background-color: #6200ea;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+/* Ссылка для возвращения */
+a {
+  color: #bb86fc;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Стили для модального окна */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 300px;
+  display: none;
+  z-index: 1000;
+}
+
+.modal-content {
+  color: #f0f0f0;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+}
+
+input[type="password"]::placeholder {
+  color: #bbb;
+}
+
+/* Кнопки в модальном окне */
+#deleteConfirmBtn,
+#deleteCancelBtn {
+  width: 100%;
+  margin: 5px 0;
+}
+
+/* Дополнительные стили для модального окна */
+#deleteConfirmBtn {
+  background-color: #03dac6;
+}
+
+#deleteConfirmBtn:hover {
+  background-color: #018786;
+}
+
+#deleteCancelBtn {
+  background-color: #bb86fc;
+}
+
+#deleteCancelBtn:hover {
+  background-color: #6200ea;
+}
+
+/* Всплывающее сообщение */
+.notification {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6c63ff;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Всплывающее сообщение */
+.notification {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6c63ff;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-width: 300px;
+  text-align: center;
+}
+
+.notification p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.notification button {
+  background-color: #574bff;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notification button:hover {
+  background-color: #3e37cc;
+}

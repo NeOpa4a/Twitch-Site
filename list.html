@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список пользователей Twitch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Список пользователей Twitch</h1>
+      <ul id="userList"></ul>
+      <a href="index.html">Вернуться на главную</a>
+    </div>
+
+    <!-- Модальное окно для удаления -->
+    <div id="deleteModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <p>Введите пароль для удаления пользователя:</p>
+        <input
+          type="password"
+          id="deletePassword"
+          placeholder="Введите пароль"
+        />
+        <button id="deleteConfirmBtn">Подтвердить удаление</button>
+        <button id="deleteCancelBtn">Отмена</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
